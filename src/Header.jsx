@@ -25,6 +25,9 @@ export function Header() {
               My Pledges
             </a>
             <a className="nav-link active " href="#">
+              Sign Up
+            </a>
+            <a className="nav-link active " href="#">
               Login
             </a>
             <a className="nav-link active" aria-disabled="true">

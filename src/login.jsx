@@ -1,6 +1,6 @@
-export function login() {
+export function Login() {
   return (
-    <div>
+    <div id="login">
       <h1>Login</h1>
       <form action="">
         <div>
@@ -9,6 +9,9 @@ export function login() {
         <div>
           Password: <input name="password_digest" type="password" />
         </div>
+        <button type="submit" className="btn btn-dark">
+          Login
+        </button>
       </form>
     </div>
   );

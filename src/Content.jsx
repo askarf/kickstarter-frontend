@@ -1,4 +1,5 @@
 import { ProjectIndex } from "./ProjectIndex";
+import { Project } from "./Project";
 
 const sampleprojects = [
   {
@@ -57,12 +58,39 @@ const sampleprojects = [
   },
 ];
 
+const samplerewards = [
+  {
+    id: 1,
+    project_id: 1,
+    description: "reward description 1",
+    goal_amount: "goal amount 1",
+    delivery: "delivery 1",
+  },
+  // {
+  //   id: 2,
+  //   project_id: 2,
+  //   description: "reward description 2",
+  //   goal_amount: "goal amount 2",
+  //   start_date: "start date 2",
+  //   end_date: "end date 2",
+  // },
+  // {
+  //   id: 3,
+  //   project_id: 3,
+  //   description: "reward description 3",
+  //   goal_amount: "goal amount 3",
+  //   start_date: "start date 3",
+  //   end_date: "end date 3",
+  // },
+];
+
 export function Content() {
   return (
     <div>
       <ProjectIndex sampleprojects={sampleprojects} />
       <h1>Content</h1>
       <h2>Content 2</h2>
+      <Project sampleprojects={sampleprojects} samplerewards={samplerewards} />
     </div>
   );
 }

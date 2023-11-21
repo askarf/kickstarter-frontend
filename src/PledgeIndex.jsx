@@ -10,7 +10,7 @@ export function PledgeIndex(props) {
           <div key={pledge.id}>
             <div className="card">
               <h2>Pledge Project name here</h2>
-              <p>Pledge Amount here</p>
+              <p>Pledge Amount here!</p>
               <p>{pledge.comment}</p>
             </div>
           </div>

@@ -1,5 +1,7 @@
 import { ProjectIndex } from "./ProjectIndex";
 import { PledgeIndex } from "./PledgeIndex";
+import { Routes, Route } from "react-router-dom";
+
 const samplepledges = [
   { id: 1, user_id: 1, reward_id: 1, project_id: 1, comment: "comment 1" },
   { id: 2, user_id: 2, reward_id: 2, project_id: 2, comment: "comment 2" },
@@ -67,10 +69,10 @@ const sampleprojects = [
 export function Content() {
   return (
     <div>
-      <ProjectIndex sampleprojects={sampleprojects} />
-      <PledgeIndex samplepledges={samplepledges} />
-      <h1>Content</h1>
-      <h2>Content 2</h2>
+      <Routes>
+        <Route path="/" element={<ProjectIndex sampleprojects={sampleprojects} />} />
+        <Route path="/pledges" element={<PledgeIndex samplepledges={samplepledges} />} />
+      </Routes>
     </div>
   );
 }

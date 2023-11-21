@@ -1,6 +1,5 @@
 import { Footer } from "./Footer";
 import { Header } from "./Header";
-import { Project } from "./Project";
 import { Content } from "./content";
 
 function App() {
@@ -9,7 +8,6 @@ function App() {
       <Header />
       <Content />
       <Footer />
-      <Project />
     </div>
   );
 }

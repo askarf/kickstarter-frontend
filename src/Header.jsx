@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 export function Header() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <Link to="/" className="navbar-brand">
           Start Kicker
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -26,12 +26,12 @@ export function Header() {
             <Link to="/pledges" className="nav-link active" href="#">
               My Pledges
             </Link>
-            <a className="nav-link active " href="#">
+            <a className="nav-link active" href="#">
               Sign Up
             </a>
-            <a className="nav-link active " href="#">
+            <Link to="/login" className="nav-link active ">
               Login
-            </a>
+            </Link>
             <a className="nav-link active" aria-disabled="true">
               Logout
             </a>

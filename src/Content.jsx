@@ -1,6 +1,7 @@
 import { ProjectIndex } from "./ProjectIndex";
 import { Project } from "./Project";
 import { PledgeIndex } from "./PledgeIndex";
+import { Login } from "./login";
 import { Routes, Route } from "react-router-dom";
 
 const samplepledges = [
@@ -95,10 +96,11 @@ const samplerewards = [
 
 export function Content() {
   return (
-    <div>
+    <div className="container text-center">
       <Routes>
         <Route path="/" element={<ProjectIndex sampleprojects={sampleprojects} />} />
         <Route path="/pledges" element={<PledgeIndex samplepledges={samplepledges} />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
       <Project sampleprojects={sampleprojects} samplerewards={samplerewards} />
     </div>

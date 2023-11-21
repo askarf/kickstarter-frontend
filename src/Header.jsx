@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Header() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -18,12 +20,12 @@ export function Header() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <a className="nav-link active" aria-current="page" href="#">
+            <Link to="/" className="nav-link active" aria-current="page" href="#">
               All Projects
-            </a>
-            <a className="nav-link active" href="#">
+            </Link>
+            <Link to="/pledges" className="nav-link active" href="#">
               My Pledges
-            </a>
+            </Link>
             <a className="nav-link active " href="#">
               Sign Up
             </a>

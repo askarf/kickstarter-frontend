@@ -1,6 +1,15 @@
 import { ProjectIndex } from "./ProjectIndex";
 import { Project } from "./Project";
+import { PledgeIndex } from "./PledgeIndex";
+import { Routes, Route } from "react-router-dom";
 
+const samplepledges = [
+  { id: 1, user_id: 1, reward_id: 1, project_id: 1, comment: "comment 1" },
+  { id: 2, user_id: 2, reward_id: 2, project_id: 2, comment: "comment 2" },
+  { id: 3, user_id: 3, reward_id: 3, project_id: 3, comment: "comment 3" },
+  { id: 4, user_id: 4, reward_id: 4, project_id: 4, comment: "comment 4" },
+  { id: 5, user_id: 5, reward_id: 5, project_id: 5, comment: "comment 5" },
+];
 const sampleprojects = [
   {
     id: 1,
@@ -87,9 +96,10 @@ const samplerewards = [
 export function Content() {
   return (
     <div>
-      <ProjectIndex sampleprojects={sampleprojects} />
-      <h1>Content</h1>
-      <h2>Content 2</h2>
+      <Routes>
+        <Route path="/" element={<ProjectIndex sampleprojects={sampleprojects} />} />
+        <Route path="/pledges" element={<PledgeIndex samplepledges={samplepledges} />} />
+      </Routes>
       <Project sampleprojects={sampleprojects} samplerewards={samplerewards} />
     </div>
   );

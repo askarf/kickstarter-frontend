@@ -14,7 +14,9 @@ export function ProjectIndex(props) {
               <p>{project.goal_amount}</p>
               <p>{project.start_date}</p>
               <p>{project.end_date}</p>
-              <Link to="./Project">Go to Project</Link>
+              <button className="btn btn-light">
+                <Link to="./Project">Go to Project</Link>
+              </button>
             </div>
           </div>
         ))}

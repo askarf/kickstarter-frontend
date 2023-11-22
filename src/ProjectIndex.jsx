@@ -6,7 +6,7 @@ export function ProjectIndex(props) {
     <div id="project-index">
       <h1>All Projects</h1>
       <div className="row row-cols-1 row-cols-md-3 g-4">
-        {props.sampleprojects.map((project) => (
+        {props.projects.map((project) => (
           <div key={project.id}>
             <div className="card">
               <h2>{project.title}</h2>

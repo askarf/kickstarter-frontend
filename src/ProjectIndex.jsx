@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+import { Link } from "react-router-dom";
+
 export function ProjectIndex(props) {
   return (
     <div id="project-index">
@@ -12,7 +14,7 @@ export function ProjectIndex(props) {
               <p>{project.goal_amount}</p>
               <p>{project.start_date}</p>
               <p>{project.end_date}</p>
-              <button>Go to Project</button>
+              <Link to="./Project">Go to Project</Link>
             </div>
           </div>
         ))}
